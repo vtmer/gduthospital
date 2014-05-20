@@ -1,0 +1,335 @@
+/* Left & Right alignment */
+.left {float: left}
+.right {float: right}
+.wrapper {width: 100%;	overflow:hidden}
+/* Global properties ======================================================== */
+body {
+	background: #09719f top center;
+	border: 0;
+	font: 14px  "微软雅黑", "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #09719f;
+}
+
+/* Global Structure ============================================================= */
+.main {
+	margin: 0 auto;
+	width: 960px;
+	background: #086b96;
+}
+/* ============================= main layout ====================== */
+a {
+	color:#09719f;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {	text-decoration:none;	}
+
+h2 {
+	font-size: 13px;
+	color: #09719f;
+	line-height: 1.2em;
+	letter-spacing: -1px;
+}
+h2 span {
+	color: #ff0000;
+}
+/* ============================= header ====================== */
+#navMenu {
+	width: 925px;
+	height: 35px;
+	text-align: center;
+	background: #1d8cbd;
+	padding-left: 35px;
+}
+#navMenu>li, #navMenu>li ul li{
+	float: left;
+	position: relative;
+	list-style: none;
+	width: 109px;
+	height: 35px;
+}
+#navMenu>li a {
+	color: #ffffff;
+	line-height: 35px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+#navMenu>li:hover a {
+	letter-spacing: 1px;
+}
+#navMenu>li ul {
+	position: absolute;
+	left: -113px;
+	text-align: center;
+	width: 335px;
+	display: none;
+}
+#navMenu>li ul li {
+	float: left;
+}
+#navMenu>li ul li a:hover {
+	color: #ffff33;
+}
+#navMenu>li:hover ul, #navMenu>li:hover, .current{
+	display: block;
+	background: #086b96;
+	
+}
+#navMenu li ul span {
+	float: left;
+	line-height: 32px;
+}
+.bar{
+	float: left;
+	width: 2px;
+	height: 35px;
+	background: url(../images/bar.png) #1d8cbd center no-repeat;
+	line-height: 35px;
+}
+/* ============================= content ====================== */
+.content{
+	background: white;
+	height: 720px;
+	margin:35px 0px 10px;
+}
+
+.normalBlock {
+	float: left;
+	margin: 2px;
+	height: 180px;
+	width: 49%;
+	border: 1px solid #a3b4bf;
+	margin: 7px 9px;
+	overflow: hidden;
+}
+
+.normalBlock a {
+	text-decoration: none;
+}
+
+.titleBg {
+	height: 26px;
+	background-color: #b3dff2;
+	padding: 6px 15px 0 8px;
+}
+
+.normalBlock h2 {
+	color: #05719f;
+	font-size: 14px;
+	letter-spacing: 2px;
+	line-height: 20px;	
+	border-left: 5px solid #09719f;
+	margin: 0;
+	padding-left: 4px;
+}
+
+.normalBlock h2 span a {
+	color: #c30c21;
+}
+
+.normalBlock h2 span {
+	font-size: 12px;
+	float: right;
+}
+
+.normalBlock li a {
+	color: #05719f;
+}
+
+.normalBlock li {
+	font-size: 13px;
+	height: 23px;
+	padding-top: 3px;
+}
+
+.normalBlock ul {
+	list-style: initial;
+	color: #09719f;
+	padding-left: 28px;
+}
+
+.normalBlock>ul li span {
+	float: right;
+	color: #707070;
+}
+
+.normalBlock>ul li div {
+	float: left;
+}
+/*=== Message of hosipital ===*/
+#MHosi {
+	width: 615px;
+	height: 240px;
+}
+#MHosi>ul {
+	float: left;
+	margin: -196px 0px 0px 253px;
+	
+}
+#MHosi>ul li {
+	height: 20px;
+	width: 330px;
+}
+#MHosi>ul li a {
+	float: left;
+}
+#PicCont {
+	width: 200px;
+	height: 160px;
+	margin: 15px 10px;
+	padding: 10px 24px;
+	background: #eeeeee;
+}
+#showPic {
+
+	position: relative;
+	width: 210px;
+	height: 140px;
+	margin: 15px -6px;
+}
+#showPic img {
+	position: absolute;
+	width: 210px;
+	height: 140px;
+}
+#picPot {
+	float: right;
+	width: 120px;
+	height: 15px;
+	background: url(../images/SPBar.png) no-repeat;
+}
+#picPot li {
+	float: left;
+	width: 12px;
+	height: 12px;
+}
+#picPot .currentPot {
+	background: #ff0000;
+}
+/*===  ===*/
+
+/*=== medical services at state expense ===*/
+#MServ {
+	width: 298px;
+	height: 240px;
+}
+/*===  ===*/
+
+/*=== Preventive health care ===*/
+#PHCare {
+	width: 340px;
+	height: 168px;
+}
+
+/*===  ===*/
+
+/*=== Health education ===*/
+#HEduc {
+	width: 255px;
+	height: 168px;
+}
+/*===  ===*/
+
+/*=== Normal Experts Schedule ===*/
+#NESche {
+	width: 298px;
+	height: 168px;
+}
+#NESche ul {
+	list-style: none;
+	padding-left: 14px;
+}
+#NESche>ul li div>span {
+	color: #05719f;
+	margin-right: 50px;
+}
+/*===  ===*/
+
+/*=== Expert Introduce and Departments Setting s' div ===*/
+#EADdiv {
+	position: relative;
+	float: left;
+	width: 340px;
+	height: 195px;
+}
+#EIntr, #DSett{
+	float: left;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #05719f;
+	letter-spacing: 2px;
+}
+/*===  ===*/
+
+/*=== Doctor's Phone Number===*/
+#DPNumb {
+	width: 255px;
+	height: 195px;
+}
+#DPNumb ul {
+	list-style: none;
+	padding-left: 14px;
+
+}
+#DPNumb>ul li div>span {
+	color: #05719f;
+	margin-right: 20px;
+}
+/*===  ===*/
+/*=== Feedback ===*/
+#Fback {
+	width: 298px;
+	height: 195px;
+}
+
+/*===  ===*/
+
+/*=== links ===*/
+#links {
+	height: 33px;
+	width: 930px;
+}
+#links .titleBg{
+	width: 80px;
+}
+#links h2 {
+	text-align: center;
+}
+#links ul {
+	list-style: none;
+	margin: -28px 0px 0px 96px;
+
+}
+#links ul li {
+	float: left;
+	margin-right: 45px;
+}
+/*===  ===*/
+/* ============================= footer ====================== */
+#footer {
+	width: 960px;
+	height: 90px;
+	text-align: center;
+	line-height: 35px;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #09719f;
+}
+#footer ul {
+	background: #ffffff;
+	height: 35px;
+}
+#footer p{
+	background: #086b96;
+	padding: 24px 0px;
+	color: #ffffff;
+}
+#footer ul span {
+	line-height: 32px;
+}
+#footer ul li{
+	display: inline;
+	list-style: none;
+	position: relative;
+}
